@@ -54,6 +54,7 @@ button {
   width: 100px;
   height: 100px;
   position: absolute;
+  animation: 10s linear infinite rotation;
 }
 
 .about {
@@ -207,5 +208,5 @@ footer {
 }
 
 .about__sun-image {
-  animation: 10s linear 0s normal none infinite running rotation;
+  
 }
