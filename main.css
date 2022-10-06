@@ -38,13 +38,19 @@ button {
   padding: 15px;
 }
 
+.about__images {
+  position: relative;
+}
+
 .about__image {
   width: 500px;
+  position: relative;
 }
  
 .about__sun-image {
   width: 100px;
   height: 100px;
+  position: absolute;
 }
 
 .about {
