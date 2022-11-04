@@ -201,13 +201,75 @@ button:hover {
 
 .logo3 {
   color: #22a030;
-  z-index: 5;
 }
 
 .card__text {
   font-size: 16px;
   line-height: 22px;
   opacity: 0.8;
+}
+
+.features__border {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: solid 1px #E6EAF4;
+}
+
+.features__feedback {
+  display: flex;
+}
+
+.features__title {
+  font-size: 48px;
+}
+
+.feature__text {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-left {
+  margin-right: 10px;
+}
+
+.features__feedback-right {
+  display: flex;
+  align-items: center;
+}
+
+.box__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.features__box {
+  padding: 30px 40px 25px 40px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.features__savings-box {
+  background-color: #dc5e26;
+  margin-right: 30px;
+  box-shadow: 0px 6px 0px rgba(221, 95, 38, 0.2);
+}
+
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+
+.promo__image {
+  border-image: url(/img/promo.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.stars {
+  color: #ff7039;
 }
 
 footer {
@@ -285,6 +347,36 @@ footer {
   .about__sun-image {
     width: 75px;
     height: 75px;
+  }
+
+  .features {
+    padding: 50px 10px;
+  }
+
+  .features__feedback {
+    flex-direction: column;
+  }
+
+  .features__feedback-left {
+    margin-right: 0;
+  }
+
+  .features__feedback-right {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .features__savings-box {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .features__title, .box__title {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns: auto;
   }
 
   .form {
