@@ -217,6 +217,7 @@ button:hover {
 
 .features__feedback {
   display: flex;
+  align-items: center;
 }
 
 .features__title {
@@ -248,6 +249,7 @@ button:hover {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: #fff;
+  width: 50%;
 }
 
 .features__savings-box {
@@ -273,6 +275,7 @@ button:hover {
 .promo__image {
   background-image: url(/img/promo.jpg);
   width: 50%;
+  height: 697px;
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
