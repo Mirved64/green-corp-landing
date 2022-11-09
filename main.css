@@ -242,7 +242,7 @@ button:hover {
   align-items: center;
 }
 
-.box__title {
+.features__box h3 {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 48px;
@@ -252,6 +252,7 @@ button:hover {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: #fff;
+  height: 230px;
 }
 
 .features__savings-box {
