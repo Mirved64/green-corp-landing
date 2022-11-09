@@ -433,6 +433,12 @@ footer {
     margin-bottom: 30px;
   }
 
+  .features__box {
+    height: 150px;
+  }
+
+
+
   .features__feedback-left h2, .features__box h3 {
     font-size: 36px;
   }
