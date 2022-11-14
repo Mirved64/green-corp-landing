@@ -252,7 +252,7 @@ button:hover {
   padding: 30px 40px 25px 40px;
   border-radius: 25px;
   color: #fff;
-  height: 230px;
+  height: 150px;
 }
 
 .features__savings-box {
@@ -277,7 +277,7 @@ button:hover {
 }
 
 .promo__image {
-  background-image: url(/img/promo.jpg);
+  background-image: url(img/promo.jpg);
   width: 50%;
   height: 100%;
   flex-shrink: 0;
