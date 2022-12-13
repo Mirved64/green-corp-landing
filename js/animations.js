@@ -22,7 +22,7 @@ function initIncreaseNumberAnimation() {
   increaseNumberAnimationStep(0, element, 5000);
 }
 
-let countElementPosition = document.querySelector('.features__clients-count').offsetTop;z
+let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
 let windowBottomPosition = window.scrollY + window.innerHeight;
 
 document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
@@ -51,6 +51,32 @@ function updateScroll() {
   } else {
     document.querySelector('header').classList.remove('header__scrolled');
   }
+
+  // Запуск анимации увеличения числа
+  let windowBottomPosition = window.scrollY + window.innerHeight;
+  let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
+  if (windowBottomPosition >= countElementPosition && !animationInited) {
+    animationInited = true;
+    initIncreaseNumberAnimation();
+  }
 }
 
 window.addEventListener('scroll', updateScroll);
+
+function addSmoothScroll(anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+ 
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}
+
+function onLinkClick(event) {
+  event.preventDefault();
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  addSmoothScroll(anchor);
+});
