@@ -22,8 +22,7 @@ function initIncreaseNumberAnimation() {
   increaseNumberAnimationStep(0, element, 5000);
 }
 
-let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
-let windowBottomPosition = window.scrollY + window.innerHeight;
+
 
 document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
   if (event.target.value === 'other') {
@@ -44,6 +43,8 @@ document.querySelector('#budget').addEventListener('change', function handleSele
   document.querySelector('#form form').removeChild(otherInput); 
   }
 });
+
+let animationInited = false;
 
 function updateScroll() {
   if (window.scrollY > 0) {
